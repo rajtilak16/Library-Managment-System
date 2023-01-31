@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    background-image: url(background.jpg);
+  
+   
+}
+ 
+.main-heading{
+    text-align: center;
+    margin-top: 3rem;
+    background-color: rgb(213, 100, 219);
+    color:white;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: space-evenly;
+    padding: 1.1rem;
+    margin-top: 3rem; 
+    /* opacity: 1; */
+}
+
+.inputContainer div{
+    border: 2px solid rgb(220, 236, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(57, 54, 54);
+    color: white;
+}
+
+.inputContainer div input, select{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 50%;
+    background-color: rgb(57, 54, 54);
+    color: white;
+}
+
+.inputContainer button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: rgb(14, 15, 13);
+    color: white;
+    font-size: medium;
+}
+
+.inputContainer button:hover{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: rgb(244, 239, 239);
+    color: rgb(15, 14, 14);
+    font-size: medium;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .inputContainer div input, select{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .inputContainer{
+        height: 70vh;
+    }
+    .inputContainer div input, select{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        width: 60%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
+
+.table-container{
+    margin: 5rem 0;
+    border: 2px solid black;
+    padding: 2rem;
+    background-color: rgb(164, 142, 142);
+    overflow:scroll;
+}
+
+.table-container table {
+    width: 100%;
+    background-color: black;
+  }
+  
+  .table-container td,  .table-container th {
+    border: 1px solid rgb(11, 8, 8);
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .table-container tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .table-container tr:hover {background-color: #ddd;}
+  
+  .table-container th {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    background-color: #0d0d0c;
+    color: white;
+  }
